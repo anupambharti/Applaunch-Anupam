@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D3A0A89622B334B2CE84BF9 /* Pods_Applaunch_Anupam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8014E187E787D268A68C2461 /* Pods_Applaunch_Anupam.framework */; };
+		F18BED642981C32F009650C8 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18BED632981C32F009650C8 /* Launch.swift */; };
 		F1A987AD298136FE006BF248 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A987AC298136FE006BF248 /* AppDelegate.swift */; };
 		F1A987AF298136FE006BF248 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A987AE298136FE006BF248 /* SceneDelegate.swift */; };
 		F1A987B1298136FE006BF248 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A987B0298136FE006BF248 /* ViewController.swift */; };
 		F1A987B4298136FE006BF248 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A987B2298136FE006BF248 /* Main.storyboard */; };
 		F1A987B629813702006BF248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A987B529813702006BF248 /* Assets.xcassets */; };
 		F1A987B929813702006BF248 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A987B729813702006BF248 /* LaunchScreen.storyboard */; };
+		F1ED7B7D2986844F00DD7718 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F1ED7B7C2986844F00DD7718 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35FB5F71D8FA97FD54249F8B /* Pods-Applaunch-Anupam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Applaunch-Anupam.debug.xcconfig"; path = "Target Support Files/Pods-Applaunch-Anupam/Pods-Applaunch-Anupam.debug.xcconfig"; sourceTree = "<group>"; };
+		8014E187E787D268A68C2461 /* Pods_Applaunch_Anupam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Applaunch_Anupam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D33C9CB6FEAE003614F9BC5 /* Pods-Applaunch-Anupam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Applaunch-Anupam.release.xcconfig"; path = "Target Support Files/Pods-Applaunch-Anupam/Pods-Applaunch-Anupam.release.xcconfig"; sourceTree = "<group>"; };
+		F18BED632981C32F009650C8 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		F1A987A9298136FE006BF248 /* Applaunch-Anupam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Applaunch-Anupam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A987AC298136FE006BF248 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1A987AE298136FE006BF248 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +38,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1ED7B7D2986844F00DD7718 /* Kingfisher in Frameworks */,
+				4D3A0A89622B334B2CE84BF9 /* Pods_Applaunch_Anupam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20385CDBD53B0E48EA3389F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8014E187E787D268A68C2461 /* Pods_Applaunch_Anupam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE3AB1012F1B55DBF902A76C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35FB5F71D8FA97FD54249F8B /* Pods-Applaunch-Anupam.debug.xcconfig */,
+				9D33C9CB6FEAE003614F9BC5 /* Pods-Applaunch-Anupam.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F1A987A0298136FE006BF248 = {
 			isa = PBXGroup;
 			children = (
 				F1A987AB298136FE006BF248 /* Applaunch-Anupam */,
 				F1A987AA298136FE006BF248 /* Products */,
+				CE3AB1012F1B55DBF902A76C /* Pods */,
+				20385CDBD53B0E48EA3389F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,56 @@
 		F1A987AB298136FE006BF248 /* Applaunch-Anupam */ = {
 			isa = PBXGroup;
 			children = (
-				F1A987AC298136FE006BF248 /* AppDelegate.swift */,
-				F1A987AE298136FE006BF248 /* SceneDelegate.swift */,
-				F1A987B0298136FE006BF248 /* ViewController.swift */,
-				F1A987B2298136FE006BF248 /* Main.storyboard */,
-				F1A987B529813702006BF248 /* Assets.xcassets */,
-				F1A987B729813702006BF248 /* LaunchScreen.storyboard */,
+				F1ED7B74298388AF00DD7718 /* Initializers */,
+				F1ED7B76298388E500DD7718 /* Controllers */,
+				F1ED7B75298388D500DD7718 /* Views */,
+				F1ED7B77298388F400DD7718 /* Resources */,
 				F1A987BA29813702006BF248 /* Info.plist */,
 			);
 			path = "Applaunch-Anupam";
+			sourceTree = "<group>";
+		};
+		F1ED7B74298388AF00DD7718 /* Initializers */ = {
+			isa = PBXGroup;
+			children = (
+				F1A987AC298136FE006BF248 /* AppDelegate.swift */,
+				F1A987AE298136FE006BF248 /* SceneDelegate.swift */,
+			);
+			path = Initializers;
+			sourceTree = "<group>";
+		};
+		F1ED7B75298388D500DD7718 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1A987B2298136FE006BF248 /* Main.storyboard */,
+				F1A987B729813702006BF248 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1ED7B76298388E500DD7718 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1A987B0298136FE006BF248 /* ViewController.swift */,
+				F1ED7B7A2985692400DD7718 /* Models */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F1ED7B77298388F400DD7718 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F1A987B529813702006BF248 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F1ED7B7A2985692400DD7718 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F18BED632981C32F009650C8 /* Launch.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +143,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1A987BD29813702006BF248 /* Build configuration list for PBXNativeTarget "Applaunch-Anupam" */;
 			buildPhases = (
+				5862A3A3E53AE3DEA2C2D711 /* [CP] Check Pods Manifest.lock */,
 				F1A987A5298136FE006BF248 /* Sources */,
 				F1A987A6298136FE006BF248 /* Frameworks */,
 				F1A987A7298136FE006BF248 /* Resources */,
+				F97BCE7624D5B49FA0F60A8D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Applaunch-Anupam";
+			packageProductDependencies = (
+				F1ED7B7C2986844F00DD7718 /* Kingfisher */,
+			);
 			productName = "Applaunch-Anupam";
 			productReference = F1A987A9298136FE006BF248 /* Applaunch-Anupam.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +185,9 @@
 				Base,
 			);
 			mainGroup = F1A987A0298136FE006BF248;
+			packageReferences = (
+				F1ED7B7B2986844F00DD7718 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = F1A987AA298136FE006BF248 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,11 +210,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5862A3A3E53AE3DEA2C2D711 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Applaunch-Anupam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F97BCE7624D5B49FA0F60A8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Applaunch-Anupam/Pods-Applaunch-Anupam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Applaunch-Anupam/Pods-Applaunch-Anupam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Applaunch-Anupam/Pods-Applaunch-Anupam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F1A987A5298136FE006BF248 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F18BED642981C32F009650C8 /* Launch.swift in Sources */,
 				F1A987B1298136FE006BF248 /* ViewController.swift in Sources */,
 				F1A987AD298136FE006BF248 /* AppDelegate.swift in Sources */,
 				F1A987AF298136FE006BF248 /* SceneDelegate.swift in Sources */,
@@ -282,6 +402,7 @@
 		};
 		F1A987BE29813702006BF248 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35FB5F71D8FA97FD54249F8B /* Pods-Applaunch-Anupam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,11 +411,12 @@
 				DEVELOPMENT_TEAM = 9V2V87D3HV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Applaunch-Anupam/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = AppLaunch;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +432,7 @@
 		};
 		F1A987BF29813702006BF248 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D33C9CB6FEAE003614F9BC5 /* Pods-Applaunch-Anupam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,11 +441,12 @@
 				DEVELOPMENT_TEAM = 9V2V87D3HV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Applaunch-Anupam/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = AppLaunch;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +482,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F1ED7B7B2986844F00DD7718 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1ED7B7C2986844F00DD7718 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1ED7B7B2986844F00DD7718 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F1A987A1298136FE006BF248 /* Project object */;
 }
